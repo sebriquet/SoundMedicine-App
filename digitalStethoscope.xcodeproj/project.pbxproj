@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76CF02171FAFA6D100031B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF02161FAFA6D100031B65 /* AppDelegate.swift */; };
+		76CF02191FAFA6D100031B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF02181FAFA6D100031B65 /* ViewController.swift */; };
+		76CF021C1FAFA6D100031B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CF021A1FAFA6D100031B65 /* Main.storyboard */; };
+		76CF021E1FAFA6D100031B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CF021D1FAFA6D100031B65 /* Assets.xcassets */; };
+		76CF02211FAFA6D100031B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CF021F1FAFA6D100031B65 /* LaunchScreen.storyboard */; };
+		76CF022C1FAFA6D100031B65 /* digitalStethoscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF022B1FAFA6D100031B65 /* digitalStethoscopeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76CF02281FAFA6D100031B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CF020B1FAFA6D100031B65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CF02121FAFA6D100031B65;
+			remoteInfo = digitalStethoscope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76CF02131FAFA6D100031B65 /* digitalStethoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalStethoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CF02161FAFA6D100031B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76CF02181FAFA6D100031B65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76CF021B1FAFA6D100031B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76CF021D1FAFA6D100031B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76CF02201FAFA6D100031B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76CF02221FAFA6D100031B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CF02271FAFA6D100031B65 /* digitalStethoscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = digitalStethoscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CF022B1FAFA6D100031B65 /* digitalStethoscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = digitalStethoscopeUITests.swift; sourceTree = "<group>"; };
+		76CF022D1FAFA6D100031B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76CF02101FAFA6D100031B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CF02241FAFA6D100031B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76CF020A1FAFA6D100031B65 = {
+			isa = PBXGroup;
+			children = (
+				76CF02151FAFA6D100031B65 /* digitalStethoscope */,
+				76CF022A1FAFA6D100031B65 /* digitalStethoscopeUITests */,
+				76CF02141FAFA6D100031B65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76CF02141FAFA6D100031B65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76CF02131FAFA6D100031B65 /* digitalStethoscope.app */,
+				76CF02271FAFA6D100031B65 /* digitalStethoscopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76CF02151FAFA6D100031B65 /* digitalStethoscope */ = {
+			isa = PBXGroup;
+			children = (
+				76CF02161FAFA6D100031B65 /* AppDelegate.swift */,
+				76CF02181FAFA6D100031B65 /* ViewController.swift */,
+				76CF021A1FAFA6D100031B65 /* Main.storyboard */,
+				76CF021D1FAFA6D100031B65 /* Assets.xcassets */,
+				76CF021F1FAFA6D100031B65 /* LaunchScreen.storyboard */,
+				76CF02221FAFA6D100031B65 /* Info.plist */,
+			);
+			path = digitalStethoscope;
+			sourceTree = "<group>";
+		};
+		76CF022A1FAFA6D100031B65 /* digitalStethoscopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76CF022B1FAFA6D100031B65 /* digitalStethoscopeUITests.swift */,
+				76CF022D1FAFA6D100031B65 /* Info.plist */,
+			);
+			path = digitalStethoscopeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76CF02121FAFA6D100031B65 /* digitalStethoscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CF02301FAFA6D100031B65 /* Build configuration list for PBXNativeTarget "digitalStethoscope" */;
+			buildPhases = (
+				76CF020F1FAFA6D100031B65 /* Sources */,
+				76CF02101FAFA6D100031B65 /* Frameworks */,
+				76CF02111FAFA6D100031B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = digitalStethoscope;
+			productName = digitalStethoscope;
+			productReference = 76CF02131FAFA6D100031B65 /* digitalStethoscope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76CF02261FAFA6D100031B65 /* digitalStethoscopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CF02331FAFA6D100031B65 /* Build configuration list for PBXNativeTarget "digitalStethoscopeUITests" */;
+			buildPhases = (
+				76CF02231FAFA6D100031B65 /* Sources */,
+				76CF02241FAFA6D100031B65 /* Frameworks */,
+				76CF02251FAFA6D100031B65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CF02291FAFA6D100031B65 /* PBXTargetDependency */,
+			);
+			name = digitalStethoscopeUITests;
+			productName = digitalStethoscopeUITests;
+			productReference = 76CF02271FAFA6D100031B65 /* digitalStethoscopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76CF020B1FAFA6D100031B65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Andrew Stoycos";
+				TargetAttributes = {
+					76CF02121FAFA6D100031B65 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					76CF02261FAFA6D100031B65 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76CF02121FAFA6D100031B65;
+					};
+				};
+			};
+			buildConfigurationList = 76CF020E1FAFA6D100031B65 /* Build configuration list for PBXProject "digitalStethoscope" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76CF020A1FAFA6D100031B65;
+			productRefGroup = 76CF02141FAFA6D100031B65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76CF02121FAFA6D100031B65 /* digitalStethoscope */,
+				76CF02261FAFA6D100031B65 /* digitalStethoscopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76CF02111FAFA6D100031B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CF02211FAFA6D100031B65 /* LaunchScreen.storyboard in Resources */,
+				76CF021E1FAFA6D100031B65 /* Assets.xcassets in Resources */,
+				76CF021C1FAFA6D100031B65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CF02251FAFA6D100031B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76CF020F1FAFA6D100031B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CF02191FAFA6D100031B65 /* ViewController.swift in Sources */,
+				76CF02171FAFA6D100031B65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CF02231FAFA6D100031B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CF022C1FAFA6D100031B65 /* digitalStethoscopeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76CF02291FAFA6D100031B65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76CF02121FAFA6D100031B65 /* digitalStethoscope */;
+			targetProxy = 76CF02281FAFA6D100031B65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76CF021A1FAFA6D100031B65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CF021B1FAFA6D100031B65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76CF021F1FAFA6D100031B65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CF02201FAFA6D100031B65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76CF022E1FAFA6D100031B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76CF022F1FAFA6D100031B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76CF02311FAFA6D100031B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRSQSEY63P;
+				INFOPLIST_FILE = digitalStethoscope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76CF02321FAFA6D100031B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRSQSEY63P;
+				INFOPLIST_FILE = digitalStethoscope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76CF02341FAFA6D100031B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRSQSEY63P;
+				INFOPLIST_FILE = digitalStethoscopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = digitalStethoscope;
+			};
+			name = Debug;
+		};
+		76CF02351FAFA6D100031B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRSQSEY63P;
+				INFOPLIST_FILE = digitalStethoscopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = digitalStethoscope;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76CF020E1FAFA6D100031B65 /* Build configuration list for PBXProject "digitalStethoscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CF022E1FAFA6D100031B65 /* Debug */,
+				76CF022F1FAFA6D100031B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CF02301FAFA6D100031B65 /* Build configuration list for PBXNativeTarget "digitalStethoscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CF02311FAFA6D100031B65 /* Debug */,
+				76CF02321FAFA6D100031B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CF02331FAFA6D100031B65 /* Build configuration list for PBXNativeTarget "digitalStethoscopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CF02341FAFA6D100031B65 /* Debug */,
+				76CF02351FAFA6D100031B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76CF020B1FAFA6D100031B65 /* Project object */;
+}
