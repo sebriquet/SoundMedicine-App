@@ -7,8 +7,11 @@
 //
 
 import XCTest
+@testable import digitalStethoscope
 
 class digitalStethoscopeUITests: XCTestCase {
+    
+    // MARK: Digital Stethoscope Tests
         
     override func setUp() {
         super.setUp()

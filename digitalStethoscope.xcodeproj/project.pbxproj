@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7640604820B5B71A003DEDA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7640604720B5B718003DEDA7 /* Assets.xcassets */; };
 		76CF02171FAFA6D100031B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF02161FAFA6D100031B65 /* AppDelegate.swift */; };
 		76CF02191FAFA6D100031B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF02181FAFA6D100031B65 /* ViewController.swift */; };
 		76CF021C1FAFA6D100031B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CF021A1FAFA6D100031B65 /* Main.storyboard */; };
-		76CF021E1FAFA6D100031B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CF021D1FAFA6D100031B65 /* Assets.xcassets */; };
 		76CF02211FAFA6D100031B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CF021F1FAFA6D100031B65 /* LaunchScreen.storyboard */; };
 		76CF022C1FAFA6D100031B65 /* digitalStethoscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF022B1FAFA6D100031B65 /* digitalStethoscopeUITests.swift */; };
+		76CF02371FAFA73800031B65 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF02361FAFA73800031B65 /* ViewControllerTwo.swift */; };
+		76F8765F208EA172008F6686 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8765E208EA172008F6686 /* ViewControllerOne.swift */; };
+		76F87661208EA1A5008F6686 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F87660208EA1A5008F6686 /* ViewControllerThree.swift */; };
+		CE8340CA2429629700B5D3BC /* SecondRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340C92429629700B5D3BC /* SecondRecording.swift */; };
+		CE8340CC24296AE400B5D3BC /* ThirdRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340CB24296AE400B5D3BC /* ThirdRecording.swift */; };
+		CE8340CE24296BB400B5D3BC /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340CD24296BB400B5D3BC /* Options.swift */; };
+		CE8340D024296DE700B5D3BC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340CF24296DE700B5D3BC /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76CF02131FAFA6D100031B65 /* digitalStethoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalStethoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7640604720B5B718003DEDA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76CF02131FAFA6D100031B65 /* SoundMedicine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundMedicine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CF02161FAFA6D100031B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76CF02181FAFA6D100031B65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76CF021B1FAFA6D100031B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		76CF021D1FAFA6D100031B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76CF02201FAFA6D100031B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76CF02221FAFA6D100031B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76CF02271FAFA6D100031B65 /* digitalStethoscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = digitalStethoscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CF022B1FAFA6D100031B65 /* digitalStethoscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = digitalStethoscopeUITests.swift; sourceTree = "<group>"; };
 		76CF022D1FAFA6D100031B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CF02361FAFA73800031B65 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		76F8765E208EA172008F6686 /* ViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
+		76F87660208EA1A5008F6686 /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
+		CE8340C92429629700B5D3BC /* SecondRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRecording.swift; sourceTree = "<group>"; };
+		CE8340CB24296AE400B5D3BC /* ThirdRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdRecording.swift; sourceTree = "<group>"; };
+		CE8340CD24296BB400B5D3BC /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		CE8340CF24296DE700B5D3BC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +82,7 @@
 		76CF02141FAFA6D100031B65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76CF02131FAFA6D100031B65 /* digitalStethoscope.app */,
+				76CF02131FAFA6D100031B65 /* SoundMedicine.app */,
 				76CF02271FAFA6D100031B65 /* digitalStethoscopeUITests.xctest */,
 			);
 			name = Products;
@@ -79,8 +93,15 @@
 			children = (
 				76CF02161FAFA6D100031B65 /* AppDelegate.swift */,
 				76CF02181FAFA6D100031B65 /* ViewController.swift */,
+				76F8765E208EA172008F6686 /* ViewControllerOne.swift */,
+				76CF02361FAFA73800031B65 /* ViewControllerTwo.swift */,
+				CE8340C92429629700B5D3BC /* SecondRecording.swift */,
+				CE8340CB24296AE400B5D3BC /* ThirdRecording.swift */,
+				CE8340CD24296BB400B5D3BC /* Options.swift */,
+				CE8340CF24296DE700B5D3BC /* Profile.swift */,
+				76F87660208EA1A5008F6686 /* ViewControllerThree.swift */,
 				76CF021A1FAFA6D100031B65 /* Main.storyboard */,
-				76CF021D1FAFA6D100031B65 /* Assets.xcassets */,
+				7640604720B5B718003DEDA7 /* Assets.xcassets */,
 				76CF021F1FAFA6D100031B65 /* LaunchScreen.storyboard */,
 				76CF02221FAFA6D100031B65 /* Info.plist */,
 			);
@@ -113,7 +134,7 @@
 			);
 			name = digitalStethoscope;
 			productName = digitalStethoscope;
-			productReference = 76CF02131FAFA6D100031B65 /* digitalStethoscope.app */;
+			productReference = 76CF02131FAFA6D100031B65 /* SoundMedicine.app */;
 			productType = "com.apple.product-type.application";
 		};
 		76CF02261FAFA6D100031B65 /* digitalStethoscopeUITests */ = {
@@ -141,15 +162,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Andrew Stoycos";
 				TargetAttributes = {
 					76CF02121FAFA6D100031B65 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 					76CF02261FAFA6D100031B65 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 76CF02121FAFA6D100031B65;
 					};
@@ -180,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76CF02211FAFA6D100031B65 /* LaunchScreen.storyboard in Resources */,
-				76CF021E1FAFA6D100031B65 /* Assets.xcassets in Resources */,
+				7640604820B5B71A003DEDA7 /* Assets.xcassets in Resources */,
 				76CF021C1FAFA6D100031B65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F87661208EA1A5008F6686 /* ViewControllerThree.swift in Sources */,
+				CE8340D024296DE700B5D3BC /* Profile.swift in Sources */,
 				76CF02191FAFA6D100031B65 /* ViewController.swift in Sources */,
 				76CF02171FAFA6D100031B65 /* AppDelegate.swift in Sources */,
+				76CF02371FAFA73800031B65 /* ViewControllerTwo.swift in Sources */,
+				CE8340CE24296BB400B5D3BC /* Options.swift in Sources */,
+				CE8340CA2429629700B5D3BC /* SecondRecording.swift in Sources */,
+				76F8765F208EA172008F6686 /* ViewControllerOne.swift in Sources */,
+				CE8340CC24296AE400B5D3BC /* ThirdRecording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +286,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -263,6 +294,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -313,6 +345,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -320,6 +353,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -354,12 +388,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XRSQSEY63P;
+				DEVELOPMENT_TEAM = 8VJZ97P5KJ;
 				INFOPLIST_FILE = digitalStethoscope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscope;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SoundMedicine.digitalStethoscope;
+				PRODUCT_NAME = SoundMedicine;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -369,12 +403,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XRSQSEY63P;
+				DEVELOPMENT_TEAM = 8VJZ97P5KJ;
 				INFOPLIST_FILE = digitalStethoscope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscope;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SoundMedicine.digitalStethoscope;
+				PRODUCT_NAME = SoundMedicine;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -389,7 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscopeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = digitalStethoscope;
 			};
@@ -405,7 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SEN.digitalStethoscopeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = digitalStethoscope;
 			};
