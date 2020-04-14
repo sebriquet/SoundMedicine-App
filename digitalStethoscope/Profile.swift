@@ -12,23 +12,23 @@ var isBoxClicked: Bool!
 var name: String!
 var emailofUser: String!
 var age: String!
-var gender: String!
-
+var gender: String! 
 
 class Profile: UIViewController, UITextFieldDelegate {
-    @IBOutlet var sendSymptoms: UIView!
+
+    @IBOutlet weak var sendSymptoms: UIButton!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var ageField: UITextField!
     @IBOutlet weak var genderField: UITextField!
     @IBOutlet weak var unchecked: UIButton!
-    
+        
     var checkedBox  = UIImage (named: "checked-2")
     var uncheckedBox = UIImage (named: "unchecked")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendSymptoms.layer.cornerRadius = 5
+        sendSymptoms.layer.cornerRadius = 6
         isBoxClicked = false
         
         self.nameField.delegate = self

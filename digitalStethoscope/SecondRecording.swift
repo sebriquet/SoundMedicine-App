@@ -14,6 +14,7 @@ import Accelerate
 
 class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeViewControllerDelegate,UITextFieldDelegate {
 
+    // MARK: Variable declaration
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     @IBOutlet weak var recordButton: UIButton!
@@ -35,12 +36,14 @@ class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeV
         
         
 
-
-        //Setupfunction
+   // MARK: Set up fucntions
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             recordButton.layer.cornerRadius = 5
             nextButton.layer.cornerRadius = 5
+            statusLabel.text = "Tap to Record"
+            nextButton.isHidden = true
         }
         
         func setupRecorder() {
@@ -53,12 +56,11 @@ class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeV
             startTime = 0
             accrecordTime2 = 0.0
             
-            
+          //  MARK: audio handling
             //Set up Audio File name and directory
-            
             let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             
-            audioFilename = paths [0] .appendingPathComponent("FrontMiddle\(fileNumber).wav")
+            audioFilename = paths [0] .appendingPathComponent("BelowRightBreast\(fileNumber).wav")
           
             let settings =
                 [
@@ -103,7 +105,7 @@ class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeV
             
         }
 
-            
+        // MARK: ACCELEROMETER HANDLING
         // function to start acclerometers
         func startAccelerometers(){
            
@@ -162,7 +164,8 @@ class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeV
             
             let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             
-            let accFilename = paths[0].appendingPathComponent("acc_TOP_audio_BOTTOM\(fileNumber).wav")
+           /// let accFilename = paths[0].appendingPathComponent("BelowRightBreast\(fileNumber).wav")
+           let accFilename = paths[0].appendingPathComponent("acc_TOP_audio_BOTTOM\(fileNumber).wav")
             print(accFilename)
             
             let audioFile = try? AVAudioFile(forWriting: accFilename, settings: outputFormatSettings, commonFormat: AVAudioCommonFormat.pcmFormatFloat32, interleaved: true)
@@ -223,6 +226,8 @@ class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeV
                 print("error: File not written", error.localizedDescription)
             }
         }
+    
+    // MARK: Record button actions
         //occurs when record button is pushed, triggers when 3 second timer runs out
         @objc func beginRecoding(timer: Timer) {
             fileNumber = fileNumber + 1;
@@ -239,12 +244,13 @@ class SecondRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeV
             
             audioRecorder?.stop()
             isRecording = false
-            statusLabel.text = "TAP TO RECORD"
+            statusLabel.text = "FINISHED RECORDING"
             self.motion.stopAccelerometerUpdates()
             buttonTimer.invalidate()
             print(accdata.count)
             setupTwoChanneledWave()
-            
+            nextButton.isHidden = false
+            recordButton.isEnabled = false
         }
         
         

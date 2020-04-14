@@ -15,8 +15,8 @@ class Options: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SendResults.layer.cornerRadius = 4
-        Symptoms.layer.cornerRadius = 4
+        SendResults.layer.cornerRadius = 6
+        Symptoms.layer.cornerRadius = 6
 
        
     }

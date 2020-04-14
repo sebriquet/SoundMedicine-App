@@ -19,7 +19,7 @@ var fileNumber: Int = 0
 
 class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailComposeViewControllerDelegate,UITextFieldDelegate{
 
-    //Variable Declaration
+    // MARK: Variable Declaration
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     @IBOutlet weak var recordButton: UIButton!
@@ -43,13 +43,14 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
     
 
 
-    //Setupfunction
+    // MARK: set up functions
     override func viewDidLoad() {
         super.viewDidLoad()
         recordButton.layer.cornerRadius = 5
         toEmailpage.layer.cornerRadius = 5
         fileNumber = 0;
-        
+        statusLabel.text = "Tap to Record"
+        toEmailpage.isHidden = true
     }
     
     func setupRecorder() {
@@ -63,11 +64,11 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
         accrecordTime2 = 0.0
         
         
+        // MARK: Audio handling
         //Set up Audio File name and directory
-        
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         
-        audioFilename = paths [0] .appendingPathComponent("FrontTop\(fileNumber).wav")
+        audioFilename = paths [0] .appendingPathComponent("AboveRightBreast\(fileNumber).wav")
       
         let settings =
             [
@@ -113,7 +114,8 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
     }
 
         
-    // function to start acclerometers
+    // MARK: Accelerometer handling
+    //function to start acclerometers
     func startAccelerometers(){
        
         if self.motion.isAccelerometerAvailable {
@@ -171,14 +173,13 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
         
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         
+       /// let accFilename = paths[0].appendingPathComponent("AboveRightBreast\(fileNumber).wav")
         let accFilename = paths[0].appendingPathComponent("acc_TOP_audio_BOTTOM\(fileNumber).wav")
         print(accFilename)
         
         let audioFile = try? AVAudioFile(forWriting: accFilename, settings: outputFormatSettings, commonFormat: AVAudioCommonFormat.pcmFormatFloat32, interleaved: true)
         
         //buffer for audio and acc separately
-        
-        
         let outputFormatSettings3 = [
             AVFormatIDKey:kAudioFormatLinearPCM,
             AVLinearPCMBitDepthKey:32,
@@ -232,7 +233,8 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
             print("error: File not written", error.localizedDescription)
         }
     }
-    //occurs when record button is pushed, triggers when 3 second timer runs out
+    // MARK: Record button actions
+    //occurs when record button is pushed, triggers when 8 second timer runs out
     @objc func beginRecoding(timer: Timer) {
         fileNumber = fileNumber + 1;
         numberOfFiles.text = String(fileNumber)
@@ -248,11 +250,13 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
         
         audioRecorder?.stop()
         isRecording = false
-        statusLabel.text = "TAP TO RECORD"
+        statusLabel.text = "FINISHED RECORDING"
         self.motion.stopAccelerometerUpdates()
         buttonTimer.invalidate()
         print(accdata.count)
         setupTwoChanneledWave()
+        toEmailpage.isHidden = false
+        recordButton.isEnabled = false
         
     }
     
@@ -266,11 +270,7 @@ class ViewControllerTwo: UIViewController,AVAudioRecorderDelegate, MFMailCompose
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(beginRecoding(timer:)), userInfo: nil, repeats: false)
         statusLabel.text = "STANDBY"
         Timer.scheduledTimer(timeInterval: 9, target: self, selector: #selector(endRecoding(timer:)), userInfo: nil, repeats: false)
-        
-        
-        
         }
-
 }
     
 //A few error handling functions 

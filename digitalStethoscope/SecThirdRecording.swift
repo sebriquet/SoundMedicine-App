@@ -1,29 +1,29 @@
 //
-//  ThirdRecording.swift
+//  SecThirdRecording.swift
 //  digitalStethoscope
 //
-//  Created by Sofia Briquet on 3/23/20.
+//  Created by Sofia Briquet on 4/4/20.
 //  Copyright © 2020 Andrew Stoycos. All rights reserved.
 //
 
-import UIKit
 import UIKit
 import AVFoundation
 import CoreMotion
 import MessageUI
 import Accelerate
 
-class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeViewControllerDelegate,UITextFieldDelegate {
+class SecThirdRecording: UIViewController,  AVAudioRecorderDelegate, MFMailComposeViewControllerDelegate,UITextFieldDelegate {
+
+    // MARK: variable declaration
+ var recordingSession: AVAudioSession!
+ var audioRecorder: AVAudioRecorder!
+ 
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var numberOfFiles: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
     
-    // MARK: VARIABLE DECLARATION
-    var recordingSession: AVAudioSession!
-       var audioRecorder: AVAudioRecorder!
-       @IBOutlet weak var recordButton: UIButton!
-       @IBOutlet weak var statusLabel: UILabel!
-       @IBOutlet weak var numberOfFiles: UILabel!
-       @IBOutlet weak var nextButton: UIButton!
-       
-        var isRecording = false
+    var isRecording = false
            let motion = CMMotionManager()
            var accdata: [Float] = []
            var upsampledAccdata: [Float] = []
@@ -34,15 +34,17 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
            var startTime: Double = 0
            var accrecordTime2 : Double = 0.0
            var audioFilename : URL!
-           
+        
 
-           // MARK: Setup functions
+    // MARK: SET UP FUNCTIONS
+           //Setupfunction
            override func viewDidLoad() {
                super.viewDidLoad()
-               recordButton.layer.cornerRadius = 4
-               nextButton.layer.cornerRadius = 4
+               recordButton.layer.cornerRadius = 5
+               nextButton.layer.cornerRadius = 5
             statusLabel.text = "Tap to Record"
             nextButton.isHidden = true
+            
            }
            
            func setupRecorder() {
@@ -56,11 +58,12 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                accrecordTime2 = 0.0
                
                
-               // MARK: Set up Audio File name and directory
+            // MARK: AUDIO HANDLING
+               //Set up Audio File name and directory
                
                let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
                
-               audioFilename = paths [0] .appendingPathComponent("LeftArmpit\(fileNumber).wav")
+               audioFilename = paths [0] .appendingPathComponent("AboveLeftBreast\(fileNumber).wav")
              
                let settings =
                    [
@@ -71,7 +74,7 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                        AVNumberOfChannelsKey: 1
                        ] as [String : Any]
                
-               // MARK: Setup recording session settings
+               //Setup recording session settings
                let recordingSession: AVAudioSession =  AVAudioSession.sharedInstance()
                do {
                    try
@@ -105,8 +108,8 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                
            }
 
-               
-           // MARK: function to start acclerometers
+    // MARK: ACCELEROMETER HANDLING
+           // function to start acclerometers
            func startAccelerometers(){
               
                if self.motion.isAccelerometerAvailable {
@@ -143,7 +146,7 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                startTime = Date().timeIntervalSinceReferenceDate
                buttonTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)    }
            
-           // MARK: Create and setup 2 channel .wav
+           //Create and setup 2 channel .wav
            func setupTwoChanneledWave() {
                let actualRate = Double(accdata.count) / (accrecordTime2)
                let SAMPLE_RATE =  8000;
@@ -164,8 +167,8 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                
                let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
                
-              ///let accFilename = paths[0].appendingPathComponent("BelowLeftArmpit\(fileNumber).wav")
-             let accFilename = paths[0].appendingPathComponent("acc_TOP_audio_BOTTOM\(fileNumber).wav")
+           ///  let accFilename = paths[0].appendingPathComponent("AboveLeftBreast\(fileNumber).wav")
+            let accFilename = paths[0].appendingPathComponent("acc_TOP_audio_BOTTOM\(fileNumber).wav")
                print(accFilename)
                
                let audioFile = try? AVAudioFile(forWriting: accFilename, settings: outputFormatSettings, commonFormat: AVAudioCommonFormat.pcmFormatFloat32, interleaved: true)
@@ -227,8 +230,8 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                }
            }
     
-           // MARK: occurs when record button is pushed
-    //triggers when 8 second timer runs out
+    // MARK: RECORD BUTTON ACTIONS
+           //occurs when record button is pushed, triggers when 3 second timer runs out
            @objc func beginRecoding(timer: Timer) {
                fileNumber = fileNumber + 1;
                numberOfFiles.text = String(fileNumber)
@@ -238,7 +241,6 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                audioRecorder?.record()
                isRecording = true
                statusLabel.text = "RECORDING"
-
            }
            //occurs when end button is pushed
            @objc func endRecoding(timer: Timer) {
@@ -251,13 +253,10 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                print(accdata.count)
                setupTwoChanneledWave()
             nextButton.isHidden = false
-            recordButton.isEnabled = false
-               
            }
            
            
-           // MARK: Record button actions
-           
+           //Record button actions
            //Timers start when record button is pressed
            @IBAction func recordBaby(_ sender: UIButton) {
                
@@ -265,11 +264,7 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
                Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(beginRecoding(timer:)), userInfo: nil, repeats: false)
                statusLabel.text = "STANDBY"
                Timer.scheduledTimer(timeInterval: 9, target: self, selector: #selector(endRecoding(timer:)), userInfo: nil, repeats: false)
-               
-               
-               
                }
-
        }
            
        //A few error handling functions
@@ -279,19 +274,4 @@ class ThirdRecording: UIViewController, AVAudioRecorderDelegate, MFMailComposeVi
            func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
                print("Audio Record Encode Error")
            }
-
-       }
-
-       // Helper function inserted by Swift 4.2 migrator.
-       fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
-           return input.rawValue
-       }
-
-       
-
-
-
-
-
-
-
+}

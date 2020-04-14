@@ -20,6 +20,13 @@
 		CE8340CC24296AE400B5D3BC /* ThirdRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340CB24296AE400B5D3BC /* ThirdRecording.swift */; };
 		CE8340CE24296BB400B5D3BC /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340CD24296BB400B5D3BC /* Options.swift */; };
 		CE8340D024296DE700B5D3BC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8340CF24296DE700B5D3BC /* Profile.swift */; };
+		CE9D6F602439205D0076AFE5 /* SecThirdRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F5F2439205D0076AFE5 /* SecThirdRecording.swift */; };
+		CE9D6F62243921020076AFE5 /* FourthRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F61243921020076AFE5 /* FourthRecording.swift */; };
+		CE9D6F64243922C80076AFE5 /* FifthRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F63243922C80076AFE5 /* FifthRecording.swift */; };
+		CE9D6F66243922EA0076AFE5 /* SixthRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F65243922EA0076AFE5 /* SixthRecording.swift */; };
+		CE9D6F68243923000076AFE5 /* NinthRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F67243923000076AFE5 /* NinthRecording.swift */; };
+		CE9D6F6A243923240076AFE5 /* SeventhRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F69243923240076AFE5 /* SeventhRecording.swift */; };
+		CE9D6F6C243923650076AFE5 /* EigthRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D6F6B243923650076AFE5 /* EigthRecording.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,13 @@
 		CE8340CB24296AE400B5D3BC /* ThirdRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdRecording.swift; sourceTree = "<group>"; };
 		CE8340CD24296BB400B5D3BC /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		CE8340CF24296DE700B5D3BC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CE9D6F5F2439205D0076AFE5 /* SecThirdRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecThirdRecording.swift; sourceTree = "<group>"; };
+		CE9D6F61243921020076AFE5 /* FourthRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthRecording.swift; sourceTree = "<group>"; };
+		CE9D6F63243922C80076AFE5 /* FifthRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthRecording.swift; sourceTree = "<group>"; };
+		CE9D6F65243922EA0076AFE5 /* SixthRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthRecording.swift; sourceTree = "<group>"; };
+		CE9D6F67243923000076AFE5 /* NinthRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthRecording.swift; sourceTree = "<group>"; };
+		CE9D6F69243923240076AFE5 /* SeventhRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhRecording.swift; sourceTree = "<group>"; };
+		CE9D6F6B243923650076AFE5 /* EigthRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EigthRecording.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,13 @@
 				76F8765E208EA172008F6686 /* ViewControllerOne.swift */,
 				76CF02361FAFA73800031B65 /* ViewControllerTwo.swift */,
 				CE8340C92429629700B5D3BC /* SecondRecording.swift */,
+				CE9D6F5F2439205D0076AFE5 /* SecThirdRecording.swift */,
+				CE9D6F61243921020076AFE5 /* FourthRecording.swift */,
+				CE9D6F63243922C80076AFE5 /* FifthRecording.swift */,
+				CE9D6F65243922EA0076AFE5 /* SixthRecording.swift */,
+				CE9D6F69243923240076AFE5 /* SeventhRecording.swift */,
+				CE9D6F6B243923650076AFE5 /* EigthRecording.swift */,
+				CE9D6F67243923000076AFE5 /* NinthRecording.swift */,
 				CE8340CB24296AE400B5D3BC /* ThirdRecording.swift */,
 				CE8340CD24296BB400B5D3BC /* Options.swift */,
 				CE8340CF24296DE700B5D3BC /* Profile.swift */,
@@ -225,11 +246,18 @@
 				76F87661208EA1A5008F6686 /* ViewControllerThree.swift in Sources */,
 				CE8340D024296DE700B5D3BC /* Profile.swift in Sources */,
 				76CF02191FAFA6D100031B65 /* ViewController.swift in Sources */,
+				CE9D6F62243921020076AFE5 /* FourthRecording.swift in Sources */,
 				76CF02171FAFA6D100031B65 /* AppDelegate.swift in Sources */,
+				CE9D6F68243923000076AFE5 /* NinthRecording.swift in Sources */,
+				CE9D6F64243922C80076AFE5 /* FifthRecording.swift in Sources */,
 				76CF02371FAFA73800031B65 /* ViewControllerTwo.swift in Sources */,
+				CE9D6F602439205D0076AFE5 /* SecThirdRecording.swift in Sources */,
 				CE8340CE24296BB400B5D3BC /* Options.swift in Sources */,
 				CE8340CA2429629700B5D3BC /* SecondRecording.swift in Sources */,
+				CE9D6F66243922EA0076AFE5 /* SixthRecording.swift in Sources */,
 				76F8765F208EA172008F6686 /* ViewControllerOne.swift in Sources */,
+				CE9D6F6C243923650076AFE5 /* EigthRecording.swift in Sources */,
+				CE9D6F6A243923240076AFE5 /* SeventhRecording.swift in Sources */,
 				CE8340CC24296AE400B5D3BC /* ThirdRecording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

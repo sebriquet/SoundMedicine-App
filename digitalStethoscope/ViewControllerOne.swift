@@ -16,7 +16,7 @@ class ViewControllerOne: UIViewController {
     @IBOutlet weak var RoundedCornerButton2:UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        RoundedCornerButton2.layer.cornerRadius = 4
+        RoundedCornerButton2.layer.cornerRadius = 6
         // Do any additional setup after loading the view, typically from a nib.
     }
     

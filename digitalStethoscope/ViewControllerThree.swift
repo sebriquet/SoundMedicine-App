@@ -12,7 +12,7 @@ import MessageUI
 
 class ViewControllerThree:
 UIViewController,MFMailComposeViewControllerDelegate,UITextFieldDelegate {
-  
+    
     @IBOutlet weak var enterEmail: UITextField!
     @IBOutlet weak var sendEmailobj: UIButton!
     @IBOutlet weak var startOver1: UIButton!
@@ -20,13 +20,14 @@ UIViewController,MFMailComposeViewControllerDelegate,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendEmailobj.layer.cornerRadius = 4
-        startOver1.layer.cornerRadius = 4
+        sendEmailobj.layer.cornerRadius = 6
+        startOver1.layer.cornerRadius = 6
         self.enterEmail.delegate = self;
     }
     
+    //MARK: function to set up email: subject, body and attach data files
     func sendemail(email: String, filename: String){
-        if( MFMailComposeViewController.canSendMail() ) {
+        if(MFMailComposeViewController.canSendMail() ) {
             print("Can send email.")
             
             let mailComposer = MFMailComposeViewController()
@@ -34,20 +35,18 @@ UIViewController,MFMailComposeViewControllerDelegate,UITextFieldDelegate {
             
             //Set the subject and message of the email
             mailComposer.setSubject("SoundMedicine: Digital Stethoscope Results")
-            mailComposer.setMessageBody("sound files along with respiratory cycle, Profile of User: Name: \(String(describing: name)), email: \(String(describing: emailofUser)), age: \(String(describing: age)), gender: \(String(describing: gender)) user indicated forced breathing: \(String(describing: isBoxClicked))", isHTML: false)
+            mailComposer.setMessageBody("Sound files along with respiratory cycle: .wav file (accelorometer on top, audio on bottom)  \nProfile of User: \nName: \(name ?? "N/A")  \nemail: \(emailofUser ?? "N/A") \nage: \(age ?? "N/A") \ngender: \(gender ?? "N/A") \nuser indicated forced breathing:  \(isBoxClicked ?? false) \n\nAnatomical Positions of Recordings: \n1. Above the Right Breast \n2. Below the Right Breast \n3. Above the Left Breast \n4. Below the Left Breast \n5. On the back, above the Right Scapula \n6. Below the Right Scapula \n7. Above the Left Scapula \n8. Below the Left Scapula \n9. On the side, below the Right Armpit \n10. Below the left armpit \nThank you!", isHTML: false)
             mailComposer.setToRecipients([email])
             
-            //collect collect various files from the multiple locations
-            //Attatch ambiguous number of audio files
-            for i in 1...fileNumber{
-                if let docsDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as? String {
-                    var fileManager = FileManager.default
-                    var filecontent = fileManager.contents(atPath: docsDir + "/" + filename + String(i) + ".wav")
-                    mailComposer.addAttachmentData(filecontent!, mimeType: "audio/x-wav", fileName: filename + String(i) + ".wav")
-                    
-                    
+       
+//MARK:  code to attach data
+           for i in 1...fileNumber{
+               if let docsDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as? String {
+                   var fileManager = FileManager.default
+                   var filecontent = fileManager.contents(atPath: docsDir + "/" + filename + String(i) + ".wav")
+                  mailComposer.addAttachmentData(filecontent!, mimeType: "audio/x-wav", fileName: filename + String(i) + ".wav")
                 }
-                fileNumber = 0 
+                fileNumber = 0
             }
             
             self.present(mailComposer, animated: true, completion: nil)
@@ -71,8 +70,9 @@ UIViewController,MFMailComposeViewControllerDelegate,UITextFieldDelegate {
     @IBAction func sendEmailact(_ sender: UIButton) {
         
         let emailer = enterEmail.text
-        
-        sendemail(email: emailer! ,filename: "acc_TOP_audio_BOTTOM")
+    
+           sendemail(email: emailer! ,filename: "acc_TOP_audio_BOTTOM")
+    
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
